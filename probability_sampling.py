@@ -1,7 +1,7 @@
 import pandas as pd
 from itertools import combinations
 
-file = pd.read_csv('Analysis_E_T//File1.csv')
+file = pd.read_csv('File1.csv')
 
 df = file.iloc[:, 1:]
 ratios = pd.concat([df[a].div(df[b]).rename(f'{a}/{b}') 
